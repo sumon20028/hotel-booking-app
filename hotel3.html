@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #004d99;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        #search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        #search-bar input {
+            padding: 10px;
+            width: 300px;
+        }
+        #search-bar button {
+            padding: 10px;
+            margin-left: 5px;
+        }
+        section {
+            padding: 20px;
+        }
+        .destination {
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #004d99;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+          </style>
+         </head>
+          <body BGCOLOE="SLATE GRAY">
+         <FONT SIZE="10" COLOR="GOLD">
+         </FONT>
+    <header>
+        <h1>Room Booking System</h1>
+    </header>
+      <main>
+        <section id="availability">
+            <h2>Check Room Availability</h2>
+            <form id="availability-form">
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" required>
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" required>
+                <button type="submit">Check Availability</button>
+            </form>
+            <div id="room-list"></div>
+        </section>
+
+        <section id="booking-management">
+            <h2>Manage Your Booking</h2>
+            <form id="booking-form">
+                <label for="booking-id">Booking ID:</label>
+                <input type="text" id="booking-id" required>
+                <button type="submit">Modify/Cancel Booking</button>
+            </form>
+            <div id="booking-details"></div>
+        </section>
+
+        <section id="reviews">
+            <h2>Reviews</h2>
+            <form id="review-form">
+                <label for="review">Leave a Review:</label>
+                <textarea id="review" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+            <div id="review-list"></div>
+        </section>
+
+        <section id="payment">
+            <h2>Payment Options</h2>
+            <form id="payment-form">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" required>
+                <select id="payment-method" required>
+                    <option value="gpay">Google Pay</option>
+                    <option value="paytm">Paytm</option>
+                </select>
+                <button type="submit">Make Payment</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Room Booking System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
